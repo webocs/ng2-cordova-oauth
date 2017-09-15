@@ -11,9 +11,10 @@ export interface ICobotOptions extends IOAuthOptions {
 export class Cobot extends OAuthProvider {
 
     options: ICobotOptions;
-    protected authUrl: string = 'https://'+ this.options.customDomain +'/oauth';
+    protected authUrl: string = 'https://'+ this.options.customDomain+'/oauth/authorize';
     protected defaults: Object = {
-      responseType: 'token'
+      responseType: 'code',
+      customDomain: "www.cobot.me"
     };
 
     constructor(options: ICobotOptions = {}) {
