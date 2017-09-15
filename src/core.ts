@@ -7,3 +7,5 @@ export * from "./provider/meetup"
 export * from "./provider/linkedin"
 export * from "./provider/strava"
 export * from "./provider/vk"
+export * from "./provider/cobot"
+
